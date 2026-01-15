@@ -4,6 +4,7 @@ out/
 !**/src/test/**/out/
 .idea/
 library.iml
+application.properties
 
 ### Eclipse ###
 .apt_generated
