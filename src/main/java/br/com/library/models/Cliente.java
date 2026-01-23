@@ -6,19 +6,16 @@ public class Cliente {
 
     private int id;
     private String nomeCompleto;
-    List<Emprestimo> emprestimos;
     private String email;
 
-    public Cliente (int id, String nomeCompleto, List<Emprestimo> emprestimos, String email) {
+    public Cliente (int id, String nomeCompleto, String email) {
         this.id = id;
         this.nomeCompleto = nomeCompleto;
-        this.emprestimos = emprestimos;
         this.email = email;
     }
 
-    public Cliente (String nomeCompleto, List<Emprestimo> emprestimos, String email) {
+    public Cliente (String nomeCompleto, String email) {
         this.nomeCompleto = nomeCompleto;
-        this.emprestimos = emprestimos;
         this.email = email;
     }
 
@@ -36,14 +33,6 @@ public class Cliente {
 
     public void setNomeCompleto(String nomeCompleto) {
         this.nomeCompleto = nomeCompleto;
-    }
-
-    public List<Emprestimo> getEmprestimos() {
-        return emprestimos;
-    }
-
-    public void setEmprestimos(List<Emprestimo> emprestimos) {
-        this.emprestimos = emprestimos;
     }
 
     public String getEmail() {
