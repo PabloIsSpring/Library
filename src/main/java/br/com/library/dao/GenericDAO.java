@@ -1,6 +1,6 @@
-package main.java.br.com.library.dao;
+package br.com.library.dao;
 
-import main.java.br.com.library.db.DatabaseConnection;
+import br.com.library.db.DatabaseConnection;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

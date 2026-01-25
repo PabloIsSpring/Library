@@ -5,6 +5,7 @@ out/
 .idea/
 library.iml
 application.properties
+target
 
 ### Eclipse ###
 .apt_generated

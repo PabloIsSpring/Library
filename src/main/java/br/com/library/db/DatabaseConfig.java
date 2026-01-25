@@ -1,4 +1,4 @@
-package main.java.br.com.library.db;
+package br.com.library.db;
 
 import java.io.IOException;
 import java.io.InputStream;
