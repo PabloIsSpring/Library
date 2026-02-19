@@ -1,6 +1,7 @@
-package main.java.br.com.library.models;
+package br.com.library.models;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Autor {
 
@@ -9,6 +10,7 @@ public class Autor {
     private LocalDate dataNascimento;
     private String naturalidade;
     private String genero;
+    private LocalDateTime deletadoEm;
 
     public Autor (String nomeCompleto, LocalDate dataNascimento, String naturalidade, String genero) {
         this.nomeCompleto = nomeCompleto;

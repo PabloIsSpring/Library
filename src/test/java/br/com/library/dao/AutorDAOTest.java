@@ -1,6 +1,6 @@
 package br.com.library.dao;
 
-import main.java.br.com.library.models.Autor;
+import br.com.library.models.Autor;
 
 import java.time.LocalDate;
 

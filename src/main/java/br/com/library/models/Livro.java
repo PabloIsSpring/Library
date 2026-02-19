@@ -1,6 +1,7 @@
-package main.java.br.com.library.models;
+package br.com.library.models;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Livro {
 
@@ -9,26 +10,24 @@ public class Livro {
     private int idAutor;
     private LocalDate dataPublicacao;
     private String generoLiterario;
-    private int qtdPaginas;
     private boolean emprestado;
+    private LocalDateTime deletadoEm;
 
     public Livro (int id, String titulo, int idAutor, LocalDate dataPublicacao, String generoLiterario,
-                  int qtdPaginas, boolean emprestado) {
+                  boolean emprestado) {
         this.id = id;
+        this.idAutor = idAutor;
         this.titulo = titulo;
         this.dataPublicacao = dataPublicacao;
         this.generoLiterario = generoLiterario;
-        this.qtdPaginas = qtdPaginas;
         this.emprestado = emprestado;
     }
 
-    public Livro (String titulo, int idAutor, LocalDate dataPublicacao, String generoLiterario, int qtdPaginas,
-                  boolean emprestado) {
-        this.titulo = titulo;
+    public Livro (String titulo, int idAutor, LocalDate dataPublicacao, String generoLiterario, boolean emprestado) {
         this.idAutor = idAutor;
+        this.titulo = titulo;
         this.dataPublicacao = dataPublicacao;
         this.generoLiterario = generoLiterario;
-        this.qtdPaginas = qtdPaginas;
         this.emprestado = emprestado;
     }
 
@@ -70,14 +69,6 @@ public class Livro {
 
     public void setGeneroLiterario(String generoLiterario) {
         this.generoLiterario = generoLiterario;
-    }
-
-    public int getQtdPaginas() {
-        return qtdPaginas;
-    }
-
-    public void setQtdPaginas(int qtdPaginas) {
-        this.qtdPaginas = qtdPaginas;
     }
 
     public boolean isEmprestado() {

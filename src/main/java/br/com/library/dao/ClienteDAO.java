@@ -1,6 +1,6 @@
 package br.com.library.dao;
 
-import main.java.br.com.library.models.Cliente;
+import br.com.library.models.Cliente;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -9,23 +9,23 @@ import java.sql.SQLException;
 public class ClienteDAO extends GenericDAO<Cliente>{
     @Override
     protected String getInsertQuery() {
-        return "INSERT INTO clientes (nome_completo, email) VALUES (?, ?)";
+        return "INSERT INTO clientes (nome_completo, email) VALUES (?, ?) ";
     }
 
     @Override
     protected String getDeleteQuery() {
-        return "UPDATE clientes SET deletado_em = NOW()" +
+        return "UPDATE clientes SET deletado_em = NOW() " +
                 " WHERE id = ?";
     }
 
     @Override
     protected String getFindByIdQuery() {
-        return "SELECT id, nome_completo, email FROM clientes WHERE id = ?";
+        return "SELECT id, nome_completo, email FROM clientes WHERE id = ? ";
     }
 
     @Override
     protected String getUpdateQuery() {
-        return "UPDATE clientes SET nome_completo = ?, email = ?" +
+        return "UPDATE clientes SET nome_completo = ?, email = ? " +
                 " WHERE id = ?";
     }
 

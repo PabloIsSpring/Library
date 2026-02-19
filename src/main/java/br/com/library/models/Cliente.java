@@ -1,12 +1,13 @@
-package main.java.br.com.library.models;
+package br.com.library.models;
 
-import java.util.List;
+import java.time.LocalDateTime;
 
 public class Cliente {
 
     private int id;
     private String nomeCompleto;
     private String email;
+    private LocalDateTime deletadoEm;
 
     public Cliente (int id, String nomeCompleto, String email) {
         this.id = id;
